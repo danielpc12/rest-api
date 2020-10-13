@@ -58,7 +58,7 @@ periodRoutes(app);
 const departmentRoutes = require("./routes/department.route");
 departmentRoutes(app);
 
-//Cargando ruta de Department
+//Cargando ruta de Faculty
 const facultyRoutes = require("./routes/faculty.route");
 facultyRoutes(app);
 

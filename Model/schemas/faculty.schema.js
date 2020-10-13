@@ -14,6 +14,11 @@ const facultySchema = new mongoose.Schema ({
         required: true 
     },
 
+    deanName: {
+
+        type: "string",
+        required: true
+    }
 }); 
 
 //Exportar esquema

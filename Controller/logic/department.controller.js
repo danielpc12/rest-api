@@ -8,6 +8,8 @@ const { Schema } = require("mongoose");
 exports.createDepartment = (req, res, next) => {
     let department = {
         name: req.body.name,
+        code: req.body.code,
+        director: req.body.director,
         faculty_id: req.body.faculty_id
     };
 

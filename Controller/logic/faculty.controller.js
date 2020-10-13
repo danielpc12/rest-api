@@ -7,7 +7,8 @@ const config = require("config");
 exports.createFaculty = (req, res, next) => {
     let faculty = {
         name: req.body.name,
-        code: req.body.code
+        code: req.body.code,
+        deanName: req.body.deanName
     };
 
     facultyDto.create(faculty, (err, data) => {
@@ -30,7 +31,8 @@ exports.createFaculty = (req, res, next) => {
 exports.updateFaculty = (req, res, next) => {
     let faculty = {
         name: req.body.name,
-        code: req.body.code
+        code: req.body.code,
+        deanName: req.body.deanName
     };
 
     facultyDto.update({_id: req.body.id}, faculty, (err, data) => {

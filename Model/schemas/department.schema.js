@@ -14,6 +14,17 @@ const departmentSchema = new mongoose.Schema ({
         required: true,
     },
 
+    code: {
+
+        type: "string",
+        required: true
+    },
+
+    director: {
+
+        type: "string",
+        required: true
+    }
     // faculty: {
     //     type: "string",
     //     required: true
